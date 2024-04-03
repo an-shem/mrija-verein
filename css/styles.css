@@ -1,0 +1,273 @@
+:root {
+  --color-mrija-blue: #2474a7;
+  --color-mrija-yellow: #f8df28;
+  --color-body: #fcfcfa;
+  --color-text-dark: #4d585b;
+  --color-text-light: #b4b4b4;
+  --color-gold: #dbae58;
+  --color-accent: #0a99ab;
+  --color-background: #0a1050;
+  --color-text-light: #bed5d8;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-body);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--color-text-dark);
+  /* background: url('../images/background8.gif'); */
+  /* background-repeat: repeat; */
+}
+.impressum__text,
+.data-protection__text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  /* flex-grow: 1; */
+  max-width: 1920px;
+  margin: auto;
+  padding: 80px 60px;
+}
+.ornament-uk {
+  width: 5%;
+  min-height: 500px;
+  display: block;
+  /* background-image: url('../images/ornament-menu-3-2.png'); */
+  background-image: url('../images/ukrainian-ornament-vertikal.jpg');
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+/* ---------------- header ----------- */
+header {
+  background-color: var(--color-background);
+  color: var(--color-text-light);
+}
+header .container {
+  padding: 20px;
+}
+/* header::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-image: url('../images/ornament-menu-1.png');
+  background-image: url('../images/ukrainian-ornament-vertikal-1.jpg');
+  background-repeat: repeat-x;
+  background-size: contain;
+} */
+.logo__wrapper {
+  display: flex;
+  position: relative;
+  margin: 0 0 20px;
+  width: 100%;
+  /* background-image: url('https://st4.depositphotos.com/12792890/21828/v/450/depositphotos_218281096-stock-illustration-national-flag-of-ukraine-designed.jpg'), */
+  /* url('https://st4.depositphotos.com/34488612/40604/v/450/depositphotos_406048038-stock-illustration-germany-flag-brush-paint-textured.jpg'); */
+  background-size: contain;
+  background-position: 20%, 80%;
+  background-repeat: no-repeat;
+}
+.logo {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+.de-wapper {
+  /* transform: rotate(180deg); */
+  transform: scale(1, -1);
+  width: 380px;
+  position: absolute;
+  left: 60%;
+}
+.menu {
+  width: 100%;
+  padding: 12px 0;
+  border-top: 2px solid var(--color-text-light);
+  border-bottom: 2px solid var(--color-text-light);
+}
+.menu__nav-list {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: 500;
+}
+.menu__nav-link {
+  cursor: pointer;
+}
+.menu__nav-link:hover {
+  /* color: var(--color-text-dark); */
+  border-bottom: 2px solid var(--color-mrija-yellow);
+}
+.menu__nav-link--accent {
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-mrija-yellow);
+}
+
+/* ---------------- main -------------------- */
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ------------------- home -------------------- */
+.home__titel {
+  text-align: center;
+}
+
+/*-------------------- news -----------------  */
+.news {
+  width: 90%;
+  padding: 60px;
+  margin: auto;
+  /* border: 1px solid var(--color-text-light); */
+  border-radius: 20px;
+  box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.3);
+  background: -webkit-linear-gradient(140deg, #15f5fd, #95c7d5, #7a99c5); /* Chrome 10-25, Safari 5.1-6 */
+  /* background: #d9e8ef; */
+}
+.news:not(:last-child) {
+  margin-bottom: 60px;
+}
+/* .news:not(:last-child)::after {
+  content: '';
+  display: block;
+  border: 1px solid var(--color-text-light);
+  margin: auto;
+  margin-top: 40px;
+  width: 50%;
+} */
+.news__titel {
+  margin-bottom: 40px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.news__text-wrap {
+  display: flex;
+}
+.news__text-wrap-img {
+  margin: 0;
+  width: 60%;
+  border-radius: 20px;
+}
+.news__text-wrap-text {
+  margin-left: 40px;
+  text-align: justify;
+}
+
+/* ---------------- footer ------------ */
+footer {
+  font-size: 16px;
+  color: var(--color-text-light);
+  border-top: 1px solid var(--color-text-dark);
+  background-color: var(--color-background);
+  /* background-image: url('../images/ornament-menu-3-bl.png'), url('../images/ornament-menu-3-br.png'); */
+  background-image: url('../images/ornament-12.png'), url('../images/ornament-12-2.png');
+  background-size: 16%;
+  background-repeat: no-repeat;
+  background-position: left bottom, right bottom;
+}
+.warpper-footer-nav {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 40px 20px; */
+  /* border-bottom: 1px solid var(--color-text-dark); */
+}
+
+.nav-footer {
+  margin-right: 80px;
+}
+.social-media {
+  margin-right: 80px;
+}
+.nav-footer-list,
+.social-media__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.nav-footer-list-item:not(:last-child),
+.social-media__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.nav-footer-link:hover,
+.social-media__link:hover {
+  color: var(--color-text-light);
+  border-bottom: 2px solid var(--color-mrija-yellow);
+}
+.data-protection-information {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  color: var(--color-accent);
+}
+.data-protection-information__line {
+  border: 1px solid var(--color-text-light);
+  margin: 20px auto;
+  width: 70%;
+}
+.data-protection-information a:not(:last-child) {
+  margin-right: 20px;
+}
+.data-protection-information a:hover {
+  color: var(--color-text-light);
+  /* border-bottom: 2px solid var(--color-mrija-yellow); */
+}
+
+/* -------------- about-as ------------ */
+.about-as__img {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+}
+.about-as__titel {
+  margin-bottom: 30px;
+}
+.about-as__text {
+  margin-bottom: 10px;
+}
+
+/* ------------ contact ------------ */
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.contact__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+.timetable-of-classes__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
