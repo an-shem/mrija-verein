@@ -167,6 +167,7 @@ main {
     #84ccd2
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* background: linear-gradient(315deg, #e4f5f5, #a1e7e5, #7ed5d3); */
+  background: linear-gradient(315deg, #9ce8ec, #95dfdd, #76b5ba);
 }
 .news:not(:last-child) {
   margin-bottom: 60px;
