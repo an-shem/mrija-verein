@@ -155,13 +155,18 @@ main {
   /* border: 1px solid var(--color-text-light); */
   border-radius: 20px;
   box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.3);
-  background: -webkit-linear-gradient(270deg, #61d2d6, #5bacc2, #388eb2); /* Chrome 10-25, Safari 5.1-6 */
+  /* background: -webkit-linear-gradient(270deg, #61d2d6, #5bacc2, #388eb2);  */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(270deg, #61d2d6, #5bacc2, #388eb2); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(270deg, #9ce8ec, #95dfdd, #84ccd2); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     270deg,
-    #61d2d6,
-    #5bacc2,
-    #388eb2
+    #9ce8ec,
+    #95dfdd,
+    #84ccd2
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: linear-gradient(315deg, #e4f5f5, #a1e7e5, #7ed5d3); */
 }
 .news:not(:last-child) {
   margin-bottom: 60px;
