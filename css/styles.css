@@ -5,7 +5,7 @@
   --color-text-dark: #4d585b;
   --color-text-light: #b4b4b4;
   --color-gold: #dbae58;
-  --color-accent: #0a99ab;
+  --color-accent: #0bb3c8;
   --color-background: #0a1050;
   --color-text-light: #bed5d8;
 }
@@ -61,6 +61,8 @@ a {
   min-height: 500px;
   display: block;
   /* background-image: url('../images/ornament-menu-3-2.png'); */
+  /* background-image: url('../images/ornament-16.png'); */
+  /* background-image: url('../images/ukrainian-ornament-vertikal-2.jpg'); */
   background-image: url('../images/ukrainian-ornament-vertikal.jpg');
   background-repeat: repeat-y;
   background-size: contain;
@@ -69,6 +71,10 @@ a {
 header {
   background-color: var(--color-background);
   color: var(--color-text-light);
+  /* background-image: url('../images/ornament-14.png'), url('../images/ornament-14-2.png');
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: left top, right top; */
 }
 header .container {
   padding: 20px;
@@ -149,8 +155,13 @@ main {
   /* border: 1px solid var(--color-text-light); */
   border-radius: 20px;
   box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.3);
-  background: -webkit-linear-gradient(140deg, #15f5fd, #95c7d5, #7a99c5); /* Chrome 10-25, Safari 5.1-6 */
-  /* background: #d9e8ef; */
+  background: -webkit-linear-gradient(270deg, #61d2d6, #5bacc2, #388eb2); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    270deg,
+    #61d2d6,
+    #5bacc2,
+    #388eb2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .news:not(:last-child) {
   margin-bottom: 60px;
@@ -190,7 +201,8 @@ footer {
   border-top: 1px solid var(--color-text-dark);
   background-color: var(--color-background);
   /* background-image: url('../images/ornament-menu-3-bl.png'), url('../images/ornament-menu-3-br.png'); */
-  background-image: url('../images/ornament-12.png'), url('../images/ornament-12-2.png');
+  background-image: url('../images/ornament-15.png'), url('../images/ornament-15-2.png');
+  /* background-image: url('../images/ornament-12.png'), url('../images/ornament-12-2.png'); */
   background-size: 16%;
   background-repeat: no-repeat;
   background-position: left bottom, right bottom;
@@ -228,7 +240,7 @@ footer {
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--color-accent);
 }
 .data-protection-information__line {
@@ -237,7 +249,7 @@ footer {
   width: 70%;
 }
 .data-protection-information a:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 .data-protection-information a:hover {
   color: var(--color-text-light);
