@@ -159,13 +159,10 @@ main {
   /* Chrome 10-25, Safari 5.1-6 */
   /* background: linear-gradient(270deg, #61d2d6, #5bacc2, #388eb2); */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: -webkit-linear-gradient(270deg, #9ce8ec, #95dfdd, #84ccd2); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    270deg,
-    #9ce8ec,
-    #95dfdd,
-    #84ccd2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: -webkit-linear-gradient(270deg, #9ce8ec, #95dfdd, #84ccd2); */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(270deg, #9ce8ec, #95dfdd, #84ccd2); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* background: linear-gradient(315deg, #e4f5f5, #a1e7e5, #7ed5d3); */
   background: linear-gradient(315deg, #9ce8ec, #95dfdd, #76b5ba);
 }
